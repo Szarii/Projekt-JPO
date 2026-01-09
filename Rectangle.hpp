@@ -32,6 +32,8 @@ class Rectangle : public Figure {
             setCorner(corners);
         }
 
+        ~Rectangle() = default;
+
         double area() const override{
             return m_sideA * m_sideB;
         }

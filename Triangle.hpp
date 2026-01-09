@@ -15,6 +15,8 @@ public:
         setCorners(corners);
     }
 
+    ~Triangle() = default;
+
     void setCorners(const std::array<Point, 3>& corners)
     {
         if (((m_corner[0].getX() == m_corner[1].getX()) && (m_corner[1].getX() == m_corner[2].getX())) || ((m_corner[0].getY() == m_corner[1].getY()) && (m_corner[1].getY() == m_corner[2].getY())))

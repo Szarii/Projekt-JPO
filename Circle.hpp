@@ -11,6 +11,8 @@ class Circle : public Figure {
             setRadius(r);
         }
 
+        ~Circle() = default;
+
         double area() const override{
             return M_PI * m_radius * m_radius;
         }

@@ -17,6 +17,8 @@ public:
         setY(y);
     }
 
+    ~Point() = default;
+
     int getX() const {
         return m_x;
     }

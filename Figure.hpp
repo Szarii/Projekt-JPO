@@ -9,9 +9,10 @@ private:
     Point m_point;
     std::string m_name;
 public:
-    // parametrized constructor
     Figure(const Point &p, const std::string &name) : m_point(p), m_name(name) {}
     Figure(const std::string &name) : m_point(0,0), m_name(name) {}
+
+    ~Figure() = default;
 
     virtual double area() const = 0;
     virtual double perimeter() const = 0;
