@@ -2,6 +2,7 @@
 
 #include "Figure.hpp"
 #include <cmath>
+#include <array>
 
 class Rhombus : public Figure {
     private:
