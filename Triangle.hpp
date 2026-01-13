@@ -21,7 +21,7 @@ namespace mw{
              * methods to compute the triangle's area and perimeter, as well as access
              * to its vertices.
              */
-            std::array<Point, 3> m_corner;
+            std::array<Point, 3> m_corner {};
 
         public:
             /**
@@ -34,7 +34,7 @@ namespace mw{
              *
              * \throws const char* If the points are collinear.
              */
-            Triangle(const std::array<Point, 3>& corners) : m_corner(corners), Figure("Triangle"){
+            Triangle(const std::array<Point, 3>& corners) : m_corner(corners), Figure(corners[0], "Triangle"){
                 setCorners(corners);
             }
 

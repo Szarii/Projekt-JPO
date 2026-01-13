@@ -47,7 +47,7 @@ namespace mw{
              *
              * \throw const char* If x or y is less than 0.
             */
-            Point(int x, int y) : m_x(x), m_y(y) {
+            Point(int x, int y) {
                 setX(x);
                 setY(y);
             }

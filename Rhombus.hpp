@@ -35,7 +35,7 @@ namespace mw{
              *
              * Stores the four vertices of the rhombus.
              */
-            std::array<Point, 4> m_corner;
+            std::array<Point, 4> m_corner {};
 
         public:
             /**

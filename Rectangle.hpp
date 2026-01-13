@@ -36,7 +36,7 @@ namespace mw{
              *
              * Stores the four corner points of the rectangle in order.
              */
-            std::array<Point, 4> m_corner;
+            std::array<Point, 4> m_corner {};
 
         protected:
             /**
@@ -53,13 +53,6 @@ namespace mw{
             Rectangle(double a, double b, const Point &center, std::string name): m_sideA(a), m_sideB(b), Figure(center, name) {
                 setA(a);
                 setB(b);
-
-                this->m_corner = { 
-                    Point(center.getX() - a/2, center.getY() - b/2),
-                    Point(center.getX() + a/2, center.getY() - b/2),
-                    Point(center.getX() + a/2, center.getY() + b/2),
-                    Point(center.getX() - a/2, center.getY() + b/2)
-                };
             }
 
             /**
