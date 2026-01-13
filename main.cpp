@@ -6,6 +6,7 @@
 #include "Rectangle.hpp"
 #include <array>
 
+using namespace mw;
 
 void describe(const Figure& block)
 {
